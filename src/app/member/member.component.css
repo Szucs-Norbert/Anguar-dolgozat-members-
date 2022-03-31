@@ -1,0 +1,18 @@
+/*
+* File: member.components.css
+* Author: NSzűcs Norbert
+* Copyright: 2022, Szűcs Norbert
+* Group: Szoft II/N
+* Date: 2022-03-31
+* Github: https://github.com/Szucs-Norbert/
+* Licenc: GNU GPL
+*/
+
+input.ng-invalid {
+    background-color: red;
+  }
+
+  input.ng-valid {
+    background-color: green;
+  }
+

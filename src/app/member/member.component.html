@@ -1,0 +1,51 @@
+/*
+* File: member.components.html
+* Author: Szűcs Norbert
+* Copyright: 2022, Szűcs Norbert
+* Group: Szoft II/N
+* Date: 2022-03-31
+* Github: https://github.com/Szucs-Norbert/
+* Licenc: GNU GPL
+*/
+
+
+<form [formGroup]="memberForm" (ngSubmit)="saveMember()">
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Név</label>
+        <input type="text" class="form-control" id="name" 
+        formControlName="name"
+        placeholder="Vezetéknév Keresztnév">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="city" class="form-label">Város</label>
+        <input type="text" class="form-control" id="city" 
+        formControlName="city"
+        placeholder="Település neve">
+    </div>
+
+    <div class="mb-3">
+        <label for="address" class="form-label">Lakcím</label>
+        <input type="text" class="form-control" id="address" 
+        formControlName="address"
+        placeholder="Cím">
+
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="text" class="form-control" id="email" 
+        formControlName="email"
+        placeholder="E-mail cím">
+
+    </div>
+
+    <div>
+        <button class="btn btn-info">
+            Rögzít
+        </button>
+    </div>
+
+</form>
